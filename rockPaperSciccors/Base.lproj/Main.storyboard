@@ -1,24 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rockPaperSciccors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8NS-Vk-vth">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xl4-NM-GYu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBU-YH-95H">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="270.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-gh-YPA">
+                                                <rect key="frame" x="190.5" y="119" width="33" height="33"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dzj-gh-YPA" firstAttribute="centerX" secondItem="ZBU-YH-95H" secondAttribute="centerX" id="CKZ-li-SaS"/>
+                                            <constraint firstItem="dzj-gh-YPA" firstAttribute="centerY" secondItem="ZBU-YH-95H" secondAttribute="centerY" id="FMC-NW-17Q"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuJ-Ib-ORw">
+                                        <rect key="frame" x="0.0" y="273.5" width="414" height="271"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="Xd8-T7-Y69">
+                                                <rect key="frame" x="71.5" y="85.5" width="271" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rock" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-g1-FRn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paper" translatesAutoresizingMaskIntoConstraints="NO" id="lhK-fV-Dfp">
+                                                        <rect key="frame" x="171" y="0.0" width="100" height="100"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Xd8-T7-Y69" firstAttribute="centerY" secondItem="cuJ-Ib-ORw" secondAttribute="centerY" id="NYA-Ye-crv"/>
+                                            <constraint firstItem="Xd8-T7-Y69" firstAttribute="centerX" secondItem="cuJ-Ib-ORw" secondAttribute="centerX" id="PgL-wi-anr"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xd-mu-ML7">
+                                        <rect key="frame" x="0.0" y="547.5" width="414" height="270.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43f-hE-UXg">
+                                                <rect key="frame" x="163" y="112" width="88.5" height="46"/>
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="SHOOT">
+                                                    <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="Shoot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFE-gh-zqg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="43f-hE-UXg" firstAttribute="centerX" secondItem="5xd-mu-ML7" secondAttribute="centerX" id="QoC-B2-kt5"/>
+                                            <constraint firstItem="43f-hE-UXg" firstAttribute="centerY" secondItem="5xd-mu-ML7" secondAttribute="centerY" id="fYD-U2-h1g"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8NS-Vk-vth" secondAttribute="bottom" id="Bng-Vo-TSY"/>
+                            <constraint firstItem="Xl4-NM-GYu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FvH-lj-JLl"/>
+                            <constraint firstItem="Xl4-NM-GYu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IcN-Q6-E9T"/>
+                            <constraint firstAttribute="trailing" secondItem="8NS-Vk-vth" secondAttribute="trailing" id="euB-cW-j6w"/>
+                            <constraint firstItem="8NS-Vk-vth" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="g0V-mg-9Sj"/>
+                            <constraint firstItem="Xl4-NM-GYu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iCQ-xi-kHK"/>
+                            <constraint firstItem="8NS-Vk-vth" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vXE-BK-TeY"/>
+                            <constraint firstItem="Xl4-NM-GYu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vxQ-J6-6qu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rockPaperScissorsImageView1" destination="EeZ-g1-FRn" id="InC-OE-QbM"/>
+                        <outlet property="rockPaperScissorsImageView2" destination="lhK-fV-Dfp" id="YVO-gi-6qq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Paper" width="100" height="100"/>
+        <image name="Rock" width="100" height="100"/>
+        <image name="background" width="640" height="640"/>
+        <image name="logo" width="33" height="33"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
