@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController
     {
-        let imagearray = [UIImage (named: "Rock"), UIImage (named: "Paper"), UIImage (named: "Scissors")]
+        let imagearray = [UIImage (named: "rock"), UIImage (named: "paper"), UIImage (named: "scissors")]
         
         @IBOutlet weak var rockPaperScissorsImageView1: UIImageView!
         @IBOutlet weak var rockPaperScissorsImageView2: UIImageView!
