@@ -40,7 +40,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="Xd8-T7-Y69">
                                                 <rect key="frame" x="71.5" y="85.5" width="271" height="100"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-g1-FRn">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scissors" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-g1-FRn">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paper" translatesAutoresizingMaskIntoConstraints="NO" id="lhK-fV-Dfp">
@@ -103,9 +103,9 @@
     </scenes>
     <resources>
         <image name="Paper" width="100" height="100"/>
+        <image name="Scissors" width="100" height="100"/>
         <image name="background" width="640" height="640"/>
         <image name="logo" width="33" height="33"/>
-        <image name="rock" width="100" height="100"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
