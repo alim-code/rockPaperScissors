@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  rockPaperSciccors
+//  rockPaperScissors
 //
 //  Created by Muhammad Ali on 2021-12-22.
 //
